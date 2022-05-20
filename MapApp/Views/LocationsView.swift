@@ -9,7 +9,6 @@ import SwiftUI
 import MapKit
 
 struct LocationsView: View {
-    @State var a = 2
     
     @EnvironmentObject private var vm: LocationsViewModel
     
