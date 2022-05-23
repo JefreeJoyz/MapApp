@@ -49,7 +49,7 @@ extension LocationDetailView {
                 Image($0)
                     .resizable()
                     .scaledToFill()
-                    .frame(width: UIScreen.main.bounds.width)
+                    .frame(width: UIDevice.current.userInterfaceIdiom == .pad ? nil : UIScreen.main.bounds.width) // special for ipad. The problem was in to wide images.
                     .clipped()
             }
         }

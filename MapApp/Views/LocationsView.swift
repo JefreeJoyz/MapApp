@@ -11,7 +11,7 @@ import MapKit
 struct LocationsView: View {
     
     @EnvironmentObject private var vm: LocationsViewModel
-    
+    let maxWidthForIpad: CGFloat = 700
     var body: some View {
         ZStack {
             mapLayer
@@ -19,6 +19,7 @@ struct LocationsView: View {
             VStack (spacing: 0) {
                 header
                     .padding()
+                    .frame(maxWidth: maxWidthForIpad)
                 Spacer ()
                 locationsPreviewStack
             }
@@ -92,6 +93,8 @@ extension LocationsView {
                     LocationPreviewView(location: location)
                         .shadow(radius: 20)
                         .padding()
+                        .frame(maxWidth: maxWidthForIpad)
+                        .frame(maxWidth: .infinity) // we need it to disable interrapt animation. You can turn on debug - slow mode and see "rvanie" animations at the bottomLeading
                         .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading)))
                 }
             }
