@@ -1,4 +1,5 @@
 # MapApp
 
-Work with MapKit on tutorial on MVVM archtecture.
-SwiftUI framework.
+Working with a tutorial. 
+
+Apple MapKit, MVVM archtecture, SwiftUI framework.
