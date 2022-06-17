@@ -16,7 +16,7 @@ Show detail point info
 
 Switch between points
 
-Also
+**Also**
 
 Ipad adaptive  
 
