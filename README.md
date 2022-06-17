@@ -2,5 +2,14 @@
 
 Working with a tutorial. 
 
-Apple MapKit, MVVM archtecture, SwiftUI framework.
-Ipad adaptive + dark mode.
+MVVM
+
+SwiftUI, MapKit
+
+**Functionality**
+Choose a point from the list
+Show mapAnnotations on the map
+Show detail point info
+Switch between points
+
+Ipad adaptive + dark mode + animations
